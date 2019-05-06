@@ -2,7 +2,7 @@
 title: Itaque earum rerum hic tenetur
 subtitle: Tips for getting the urge to buy under control
 template: post
-thumbnail: "images/post04.svg"
+thumb_img_path: "images/post04.svg"
 date: 2018-03-12
 excerpt: |-
     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
