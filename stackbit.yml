@@ -255,7 +255,6 @@ models:
       - type: text
         name: excerpt
         label: Post Excerpt
-        required: true
         description: The excerpt displayed in the post thumbnail
       - type: genericHero
         name: hero
