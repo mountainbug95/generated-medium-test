@@ -1,7 +1,7 @@
 ---
 title: Debitis aut rerum necessitatibus saepe eveniet
 subtitle: Tips for getting the urge to buy under control
-template: page
+template: post
 thumbnail: "images/post03.svg"
 date: 2018-03-14
 excerpt: |-

@@ -1,7 +1,7 @@
 ---
 title: Impedit quo minus id quod
 subtitle: Tips for getting the urge to buy under control
-template: page
+template: post
 thumbnail: "images/post02.svg"
 date: 2018-03-15
 excerpt: |-

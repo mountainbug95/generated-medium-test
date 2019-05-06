@@ -1,7 +1,7 @@
 ---
 title: Itaque earum rerum hic tenetur
 subtitle: Tips for getting the urge to buy under control
-template: page
+template: post
 thumbnail: "images/post04.svg"
 date: 2018-03-12
 excerpt: |-

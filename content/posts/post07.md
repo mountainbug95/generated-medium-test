@@ -1,7 +1,7 @@
 ---
 title: Sed ut perspiciatis unde omnis iste
 subtitle: Tips for getting the urge to buy under control
-template: page
+template: post
 thumbnail: "images/post01.svg"
 date: 2018-03-17
 excerpt: |-

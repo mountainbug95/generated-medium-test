@@ -232,7 +232,7 @@ models:
   post:
     type: page
     label: Post
-    template: page
+    template: post
     folder: posts
     fields:
       - type: string
