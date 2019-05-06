@@ -1,6 +1,7 @@
 <!-- POSTS -->
 <div  class="posts">
     <ul class="posts-list">
+
         {% for post in include_dict.site.root.folders.posts.pages | sort(true, true, "date") %}
             {% if post.dp %}
                 {% if loop.first %}
@@ -25,9 +26,11 @@
                             {% endif %}
                             <h1 class="post-heading{% if post.thumb_img_path %} inversed{% endif %}">{{ post.title }}</h1>
                         </div>
-                        <div class="excerpt">
-                            {{ post.excerpt | nl2br | safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
-                        </div>
+                        {% if post.excerpt %}
+                            <div class="excerpt">
+                                {{ post.excerpt | nl2br | safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                            </div>
+                        {% endif %}
                     </li>
                 {% endif %}
             {% endif %}
