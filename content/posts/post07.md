@@ -1,6 +1,5 @@
 ---
 title: Sed ut perspiciatis unde omnis iste
-isFeatured: true
 subtitle: Tips for getting the urge to buy under control
 template: post
 thumb_img_path: "images/post01.svg"
