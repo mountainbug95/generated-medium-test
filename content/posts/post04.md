@@ -18,6 +18,7 @@ tagsList:
   - name: Urban
   - name: Innovation
   - name: Venture Capital
+displayPost: true
 ---
 
 <span class="lead-letter">W</span>e knew things were spiraling out of control when I had to create a spreadsheet to keep track of all the packages arriving at my doorstep.

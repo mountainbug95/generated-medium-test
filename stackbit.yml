@@ -277,6 +277,11 @@ models:
               name: name
               label: Tag Name
               required: true
+      - type: boolean
+        name: displayPost
+        label: Display Post
+        default: true
+        description: Displays the post in the posts section
   basic:
     type: page
     label: Basic Page

@@ -2,32 +2,34 @@
 <div  class="posts">
     <ul class="posts-list">
         {% for post in include_dict.site.root.folders.posts.pages | sort(true, true, "date") %}
-            {% if loop.first %}
-                <li class="first-post">
-                    <div class="first-post-content{% if post.thumb_img_path %} has-img{% endif %}">
-                        <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
-                        {% if post.thumb_img_path %}
-                            <img class="first-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
-                        {% endif %}
-                        <h1 class="first-post-heading inversed">{{ post.title }}</h1>
-                        <div class="excerpt inversed">
-                            {{ post.excerpt | nl2br| safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+            {% if post.displayPost %}
+                {% if loop.first %}
+                    <li class="first-post">
+                        <div class="first-post-content{% if post.thumb_img_path %} has-img{% endif %}">
+                            <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
+                            {% if post.thumb_img_path %}
+                                <img class="first-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                            {% endif %}
+                            <h1 class="first-post-heading inversed">{{ post.title }}</h1>
+                            <div class="excerpt inversed">
+                                {{ post.excerpt | nl2br| safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            {% else %}
-                <li class="post">
-                    <div class="post-header{% if  post.thumb_img_path %} has-img{% endif %}">
-                        <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
-                        {% if  post.thumb_img_path %}
-                            <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
-                        {% endif %}
-                        <h1 class="post-heading{% if post.thumb_img_path %} inversed{% endif %}">{{ post.title }}</h1>
-                    </div>
-                    <div class="excerpt">
-                        {{ post.excerpt | nl2br | safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
-                    </div>
-                </li>
+                    </li>
+                {% else %}
+                    <li class="post">
+                        <div class="post-header{% if  post.thumb_img_path %} has-img{% endif %}">
+                            <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
+                            {% if  post.thumb_img_path %}
+                                <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                            {% endif %}
+                            <h1 class="post-heading{% if post.thumb_img_path %} inversed{% endif %}">{{ post.title }}</h1>
+                        </div>
+                        <div class="excerpt">
+                            {{ post.excerpt | nl2br | safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                        </div>
+                    </li>
+                {% endif %}
             {% endif %}
         {% endfor %}
     </ul>
