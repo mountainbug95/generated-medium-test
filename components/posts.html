@@ -12,7 +12,7 @@
                             {% endif %}
                             <a href="{{ post.url | relative_url }}"><h1 class="first-post-heading{% if post.thumb_img_path and post.display_thumbnail %} inversed{% endif %}">{{ post.title }}</h1></a>
                             <div class="excerpt{% if post.thumb_img_path and post.display_thumbnail %} inversed{% endif %}">
-                                {{ post.excerpt | nl2br| safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                                {{ post.excerpt | nl2br| safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
                             </div>
                         </div>
                     </li>
@@ -27,7 +27,7 @@
                         </div>
                         {% if post.excerpt %}
                             <div class="excerpt">
-                                {{ post.excerpt | nl2br | safe }}..<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                                {{ post.excerpt | nl2br | safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
                             </div>
                         {% endif %}
                     </li>

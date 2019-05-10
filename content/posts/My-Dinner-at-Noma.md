@@ -113,7 +113,7 @@ Then, there was a pine cones salad. Not pine nuts. Cones. This was clearly meant
 
 The weirdest dish followed. It was a box. Inside, there was a huge 1.5-inch beetle!
 
-![](/images/My-Dinner-at-Noma/1*GpO38NIC_junDjEREYyVrA.jpeg)
+![](https://cdn-images-1.medium.com/max/800/1*GpO38NIC_junDjEREYyVrA.jpeg)
 
 <figcaption>Beetle!</figcaption>
 
